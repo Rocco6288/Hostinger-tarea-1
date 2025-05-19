@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 :root{
     --color-background:#1f1346;
     --color-text:#ffffff;
@@ -128,7 +133,7 @@ header{
     width: 1250px;
     display: flex;
     flex-direction: column;
-    padding: 80px;
+    padding: 56px 0px;
     align-items: center;
 }
 
@@ -157,6 +162,7 @@ header{
     display: flex;
     flex-direction: row;
     margin-bottom: 35px;
+    padding: 0px 16px;
     gap: 24px;
     width: 100%;
 }
@@ -211,11 +217,13 @@ header{
     text-decoration: none;
 }
 
-@media screen and (max-width: 1279px){
+@media screen and (max-width: 1025px){
     .content__card-container{
         flex-direction: column;
     }
+}
 
+@media screen and (max-width: 1139px){
     .idioma{
         display: none;
     }
@@ -230,5 +238,23 @@ header{
         padding: 10px;
         display: block;
     }
+}
 
+@media screen and (max-width: 320px) {
+    .title-medium{
+        color: var(--color-text);
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    .content-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 32px;
+        background-color: var(--color-article);
+        /* Flex es una propiedad de hijo (Osea que el padre de este elemento debe ser una flexbox) */
+        flex: 1; /* se dividan equitativamente el espacio */
+    }
 }
