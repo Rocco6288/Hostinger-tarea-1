@@ -18,8 +18,10 @@ html, body {
     --color-text:#ffffff;
     --color-article:#2f1c6a;
     --color-button:#673de6;
-    --color-icon: #ffffff;
-    --color-navegation-section-text-small: #1d1e20;
+    --color-icon:#ffffff;
+    --color-navegation-section-text-small:#1d1e20;
+    --color-footer-section-text-small:#311c6e;
+    --color-footer-icons: #311c6e;
 } 
 
 /* margin bottom */
@@ -36,6 +38,10 @@ html, body {
 .mt-3{
     margin-top: 32px;
 }
+
+
+
+/* HEADER START */
 
 header{
     display: flex;
@@ -117,20 +123,27 @@ header{
     display: none;
 }
 
+/* HEADER END */
+
+
 .text-center{
     text-align: center;
 }
 
-.section-dark{
+
+/* MAIN START */
+
+.section-migracion-de-sitios-web-simplificada{
     background-color: var(--color-background);
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: 630px;
 }
 
 .section__content{
-    width: 1250px;
+    width: 1220px;
     display: flex;
     flex-direction: column;
     padding: 56px 0px;
@@ -148,7 +161,11 @@ header{
     color: var(--color-text);
     font-size: 16px;
     font-weight: 400;
+    width: 1128px;
+    
 }
+
+
 
 .title-small{
     color: var(--color-text);
@@ -161,8 +178,8 @@ header{
 .content__card-container{
     display: flex;
     flex-direction: row;
-    margin-bottom: 35px;
-    padding: 0px 16px;
+    margin: 32px 36px;
+    padding: 0px 40px;
     gap: 24px;
     width: 100%;
 }
@@ -175,6 +192,13 @@ header{
     background-color: var(--color-article);
     /* Flex es una propiedad de hijo (Osea que el padre de este elemento debe ser una flexbox) */
     flex: 1; /* se dividan equitativamente el espacio */
+    height: 256px;
+}
+
+.text-small-content-card{
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .content-cardn__icon{
@@ -206,6 +230,13 @@ header{
     border-radius: 8px;
 }
 
+.btn-migracion-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin: 0px 36px;
+}
+
 .btn-migracion-section{
     background-color: var(--color-button);
     font-weight: 700;
@@ -217,11 +248,201 @@ header{
     text-decoration: none;
 }
 
+/* MAIN END */
+
+
+
+/* FOOTER START */
+
+.logo-and-social-icons-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 81px;
+    padding: 0px 80px;
+}
+
+.footer-logo-conteiner{
+    margin: 8px 0px 0px;
+}
+
+.h-svgo-icon--logo-footer{
+    height: 30px;
+}
+
+.social-icons-container{
+    display: flex;
+    gap: 20px;
+}
+
+.bi-linkedin{
+    color: var(--color-footer-icons);
+    font-size: 32px;
+}
+
+.bi-facebook{
+    color: var(--color-footer-icons);
+    font-size: 32px;
+}
+
+.bi-instagram{
+    color: var(--color-footer-icons);
+    font-size: 32px;
+}
+
+.bi-twitter-x{
+    color: var(--color-footer-icons);
+    font-size: 32px;
+}
+
+.bi-youtube{
+    color: var(--color-footer-icons);
+    font-size: 32px;
+}
+
+.payment-methods-and-legal-links-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 81px;
+    padding: 0px 80px;
+}
+
+.payment-methods-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    margin: 0px 0px 40px;
+}
+
+.visa-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.mastercard-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.amex-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.diner-club-international-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.naranja-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.cordial-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.cordobesa-img{
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 224, 230);
+}
+
+.footer-section-payment-text-small{
+    color: var(--color-footer-section-text-small);
+    font-size: 14px;
+}
+
+.legal-links-container{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.btn-footer-legal-links-1{
+    margin-right: 16px;
+    color: var(--color-footer-section-text-small);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-footer-legal-links-2{
+    margin-right: 16px;
+    color: var(--color-footer-section-text-small);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-footer-legal-links-3{
+    color: var(--color-footer-section-text-small);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.linea-separativa-footer{
+    margin: -20px auto 20px auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid rgb(211, 224, 230);
+}
+
+.copyright-section{
+    margin: 0px 81px;
+    padding: 0px 80px;
+}
+
+
+.copyright-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-text-small{
+    color: var(--color-footer-section-text-small);
+    font-size: 14px;
+}
+
+
+
+/* FOOTER END */
+
+
+
 @media screen and (max-width: 1025px){
     .content__card-container{
         flex-direction: column;
+        width: 768px;
+        margin: 32px 128px;
+        padding: 0px 40px;
+    }
+
+    .text-small{
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+    width: 700px;
     }
 }
+
 
 @media screen and (max-width: 1139px){
     .idioma{
