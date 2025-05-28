@@ -14,12 +14,19 @@ html, body {
 }
 
 :root{
+    --color-title-span-text-icon-hero: #2f1c6a;
+    --color-buttom-small-span-icon-hero: #673de6;
+    --color-correct-symbol_icon-hero: #00b090;
+    --color-buttom2-hero: #e2dbfc;
+
+
     --color-background:#1f1346;
     --color-text:#ffffff;
     --color-article:#2f1c6a;
     --color-button:#673de6;
     --color-icon:#ffffff;
     --color-navegation-section-text-small:#1d1e20;
+
     --color-footer-section-text-small:#311c6e;
     --color-footer-icons: #311c6e;
 } 
@@ -47,6 +54,13 @@ header{
     display: flex;
     align-items: center;
     height: 88px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* capas */
+    background-color: white;
 }
 
 .navegation-section-logo{
@@ -131,7 +145,159 @@ header{
 }
 
 
-/* MAIN START */
+/* MAIN SECTION (HERO) START */
+
+.section-hero{
+    width: 100%;
+    min-height: 750px; 
+    max-height: 750px;
+}
+
+.left-side{
+    width: 100%;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding: 9% 0% 0% 0%;
+}
+
+.big-title-hero{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 36px;
+    font-weight: 700;
+    padding-right: 70%;
+}
+
+.p-container-hero{
+    display: flex;
+    gap: 8px;
+}
+
+.span-text-hero-{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 600;
+}
+
+.span-text-hero{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.span-check-icon-container1{
+    padding: 1% 0% 0%; 
+}
+
+.span-check-icon-container2{
+    padding: 0% 0% 0%; 
+}
+
+.span-check-icon-container3{
+    padding: 0% 0% 1%; 
+}
+
+.light-span-text{
+    color: var(--color-buttom-small-span-icon-hero);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bi-check-lg{
+    color: var(--color-correct-symbol_icon-hero);
+    font-size: 24px;
+}
+
+.span-text-hero-16px{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* .span-text-15px-num-container{
+
+}
+ */
+
+.span-text-hero-15px{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.span-text-hero-num{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.bi-question-circle{
+    color: var(--color-title-span-text-icon-hero);
+}
+
+.btn-container-hero{
+    display: flex;
+    margin: 2% 0% 1%;
+    gap: 10px;
+}
+
+.btn-1{
+    color: white;
+    font-size: 16px;
+    background-color: var(--color-buttom-small-span-icon-hero);
+    border: 2px solid var(--color-buttom-small-span-icon-hero);
+    border-radius: 8px;
+    padding: 12px 48px;
+    text-decoration: none;
+}
+
+.btn-2{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--color-buttom2-hero);
+    border: 2px;
+    border-radius: 8px;
+    padding: 12px 48px;
+    text-decoration: none;
+}
+
+/* .garantia-span-container{
+
+} */
+
+.bi-shield-check{
+    color: var(--color-buttom-small-span-icon-hero);
+    font-size: 16px;
+}
+
+.span-text-hero-garantia{
+    color: var(--color-title-span-text-icon-hero);
+    font-size: 16px;
+    font-weight: 400;
+}   
+
+.img-containter-hero{
+    border: 2px solid burlywood;
+}
+
+.hero-img{
+    width: 100%;
+    max-width: 880px;
+    display: flex;
+    position: relative;
+    top: -500px;
+    left: 496px;
+}
+
+
+
+
+/* MAIN SECTION (MIGRACION) START */
 
 .section-migracion-de-sitios-web-simplificada{
     background-color: var(--color-background);
@@ -139,7 +305,7 @@ header{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    min-height: 630px;
+    min-height: 640px;
     height: auto;
     padding-bottom: 30px;
 }
@@ -168,8 +334,6 @@ header{
     max-width: 1128px;
     margin: 0 auto;
 }
-
-
 
 .title-small{
     color: var(--color-text);
